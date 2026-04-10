@@ -1,0 +1,18 @@
+[project]
+name = "coco-tunnel-test"
+version = "0.1.0"
+description = "Comprehensive API testing suite for Coco-Tunnel"
+readme = "README.md"
+requires-python = ">=3.9"
+dependencies = [
+    "pytest>=7.4.0",
+    "httpx>=0.24.0",
+    "pydantic>=2.0.0",
+    "pytest-cov>=4.1.0",
+    "pytest-asyncio>=0.21.0",
+]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+python_files = "test_*.py"
+addopts = "-v --tb=short"
